@@ -1,0 +1,170 @@
+
+/* Home Page css*/
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5; 
+    
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color:white;
+    z-index: 1000;
+    background: grey;
+    
+   
+}
+nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
+
+    
+
+.feature{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+
+
+.feature div:first-child {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 350px;
+    background-color: #ffffff; 
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(244, 8, 8, 0.1); 
+    border: 1px solid #e0e0e0; 
+}
+
+
+.feature div:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    align-content: center;
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(18, 14, 14, 0.1); 
+    border: 1px solid #e0e0e0; 
+
+}
+
+
+.feature div:not(:first-child) img {
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.feature div:last-child {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 350px;
+    background-color: #ffffff; 
+    margin: 10px;
+   
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(244, 8, 8, 0.1); 
+    border: 1px solid #e0e0e0; 
+
+}
+
+
+#recent-right {
+    display: block;
+    font-size: 15px;
+     width: 100%;
+    height: 70%;
+    text-align: center;
+}
+
+
+a {
+    color: #007BFF;
+    text-decoration: none;  
+}
+
+/* Post.html cs*/
+
+.all-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+    gap: 10px; /* space between grid items */
+    margin-top: 20px;
+    background-color: white ;
+
+}
+
+.all-posts img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+
+/* About.html css */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh; 
+    width: 100%;
+    margin: 0; 
+    margin-left: 200px;
+   
+    
+}
+
+
+/*deafault.html css*/
+
+.default
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.default img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+

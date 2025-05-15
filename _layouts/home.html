@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/style.css">
+        <title>{{ page.title }}</title>
+    </head>
+    <body>
+        <header>
+            <h1>{{ site.title }}</h1>
+          <nav>
+                <ul class="nav">
+                    <li><a href="{{site.baseurl}}//">Home</a></li>
+                    <li><a href="{{site.baseurl}}/posts/">Posts</a></li>
+                    <li><a href="{{site.baseurl}}/about/">about</a></li>
+                </ul>
+           </nav>
+            <img src="{{site.baseurl}}/assets/img/{{ page.hero }}" alt="Hero-bild" style="max-width: 100%; height: auto;" class="head">
+        </header>
+
+       
+           
+    
+        <main>
+            <div class="feature">
+                {% for post in site.posts %}
+                <div >
+                    <img src="{{site.baseurl}}/assets/img/{{ post.img }}" alt="Recent" >
+                    <div id="recent-right">
+                        <h3>{{ post.header }}</h3>
+                        <p>{{ post.text }}</p>
+                        <a href="{{site.baseurl}}/{{post.url}}">Expolore more</a>
+                    </div>         
+                </div>
+                {%endfor%}
+                
+            </div>
+        </main> 
+         <footer>
+        <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    </footer>
+    </body>
+    </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/style.css">
+    
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a href="{{site.baseurl}}//">Home</a></li>
+                <li><a href="{{site.baseurl}}/posts/">Posts</a></li>
+                <li><a href="{{site.baseurl}}/about/">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+       <main>
+            <div class="all-posts">
+                {% for post in site.posts %}
+                <div >
+                    <img src="{{site.baseurl}}/assets/img/{{ post.img }}" alt="Recent" >
+                    <div id="recent-right">
+                        <h3>{{ post.header }}</h3>
+                        <p>{{ post.text }}</p>
+                        <a href="{{site.baseurl}}/{{post.url}}">Expolore more</a>
+                    </div>         
+                </div>
+                {%endfor%}
+                
+            </div>
+        </main> 
+
+        <footer>
+         <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+        </footer>
+   
+    
+</body>
+</html>
+
+    
+</body>
+</html>
